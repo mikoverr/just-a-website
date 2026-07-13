@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=VT323&display=swap');
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("./themes.css");
+@import url("./media.css");
+@import url("./layers/background.css");
+@import url("./layers/page.css");
+@import url("./layers/overlay.css");
+@import url("./components/background/theme-background.css");
+@import url("./components/overlay/notifications.css");
+@import url("./components/page/typewriter.css");
+@import url("./components/page/links.css");
+@import url("./components/page/theme-selector.css");
+
+body {
+  font-family: var(--font-family-base);
+}
+
+p {
+  color: var(--color-text);
+}
+
+a {
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+a:hover,
+a:active {
+  color: var(--color-primary);
+}
+
+.surface {
+  background-color: var(--color-surface);
+  -webkit-backdrop-filter: var(--backdrop-blur-container);
+  backdrop-filter: var(--backdrop-blur-container);
+  border: var(--border-container);
+  border-radius: var(--border-radius-container);
+  box-shadow: 0px 0px 8px 2px var(--color-border);
+  transition: all var(--transition);
+}
+
+/*.wrapper { }*/
+
+.wrapper__background {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-background);
+}
+
+.wrapper__page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  pointer-events: none;
+}

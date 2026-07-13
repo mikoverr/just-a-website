@@ -1,97 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website with links to social profiles and projects">
-    <meta name="theme-color" content="#000000">
-    
-    <title>I`m mikoster | it`s just a website</title>
-    <meta name="description" content="This is the page where you can find my contact information.">
-    <meta name="keywords" content="frontend, developer, javascript, portfolio, resume">
-    <meta name="author" content="mikoster">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>mikoverr | Software Engineer & Developer</title>
+        <meta name="description" content="Personal page of mikoverr. Software engineering, development, and social links. Follow my journey on GitHub and Twitch." />
+        <meta name="keywords" content="mikoverr, software engineer, developer, portfolio, github, twitch, discord" />
+        <meta name="author" content="mikoverr" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mik0ster.github.io/">
-    <meta property="og:title" content="I`m mikoster | it`s just a website">
-    <meta property="og:description" content="Hello! This is a beautiful website with useful links.">
-    <meta property="og:image" content="https://mik0ster.github.io/assets/images/og-image.png">
-    <!-- Github -->
-    <!-- My hub -->
-    <!-- Mail -->
-    <!-- Twitch -->
-    <!-- Steam -->
+        <!-- Open Graph / Facebook / Discord -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mikoverr.ru/" />
+        <meta property="og:title" content="mikoverr | Software Engineer & Developer" />
+        <meta property="og:description" content="Personal page of mikoverr. Software engineering, development, and social links." />
+        <meta property="og:image" content="https://mikoverr.ru/src/assets/images/og-image.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=VT323&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://mikoverr.ru/" />
+        <meta name="twitter:title" content="mikoverr | Software Engineer & Developer" />
+        <meta name="twitter:description" content="Personal page of mikoverr. Software engineering, development, and social links." />
+        <meta name="twitter:image" content="https://mikoverr.ru/assets/og-image.png" />
 
-    <link rel="stylesheet" href="css/components/themes.css">
-    <link rel="stylesheet" href="css/components/background.css">
-    <link rel="stylesheet" href="css/components/theme-selector.css">
-    <link rel="stylesheet" href="css/components/overlay.css">
-    <link rel="stylesheet" href="css/components/notifications.css">
-</head>
-<body>
-    <div class="background-wrapper" aria-hidden="true">
-        <div class="background"></div>
-    </div>
- 
-    <div class="page-wrapper">
-        <main class="page">
-            <section class="page__section page__section--top"></section>
-
-            <section class="page__section page__section--center">
-                <nav class="links">
-                    <a class="links__item container" href="https://github.com/mik0ster" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
-                        <svg class="links__item-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                        <p class="links__item-label">ME ON GITHUB</p>
-                    </a>
-                    <a class="links__item container" href="/hub" target="_blank" aria-label="Visit my hub">
-                        <p class="links__item-label">MY HUB</p>
-                    </a>
-                    <a class="links__item container" href="mailto:" aria-label="Send me an email">
-                        <svg class="links__item-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Mail</title><path d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12"/></svg>
-                        <p class="links__item-label">SEND ME MAIL</p>
-                    </a>
-                    <a class="links__item container" href="https://twitch.tv/mikoster" target="_blank" aria-label="Visit my Twitch channel">
-                        <svg class="links__item-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitch</title><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg>
-                        <p class="links__item-label">TWITCH CHANNEL</p>
-                    </a>
-                    <a class="links__item container" href="https://steamcommunity.com/id/mik0ster" target="_blank" aria-label="Visit my Steam profile">
-                        <svg class="links__item-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Steam</title><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
-                        <p class="links__item-label">YEAH, STEAM</p>
-                    </a>
-                </nav>
-            </section>
-
-            <section class="page__section page__section--bottom">
-                <footer class="footer">
-                    <p class="copy">created by <a href="https://github.com/mik0ster" target="_blank">mikoster</a><br><a href="https://github.com/mik0ster/mik0ster.github.io" target="_blank">source code</a></p>
-
-                    <div class="theme-selector-wrapper">
-                        <div class="theme-selector container">
-                            <p class="theme-selector__label">Theme:</p>
-                            <div class="theme-selector__current-option">
-                                <p class="theme-selector__current-option-label"></p>
-                                <svg class="theme-selector__current-option-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m357-384 123-123 123 123 57-56-180-180-180 180 57 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
-                            </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="src/assets/styles/style.css" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="wrapper__background"></div>
+            
+            <div class="wrapper__page">
+                <main class="page__main">
+                    <header class="main__top">
+                        <div class="typewriter-wrapper"></div>
+                    </header>
+                    <section class="main__center">
+                        <div class="links-wrapper">
                         </div>
-                        <div class="theme-selector__options-list container"></div>
-                    </div>
+                    </section>
+                    <div class="main__bottom"></div>
+                </main>
+                
+                <footer class="page__footer">
+                    <p class="footer__copy">
+                        created by
+                        <a
+                            href="https://github.com/mikoverr"
+                            target="_blank"
+                            >mikoverr</a
+                        >
+                    </p>
+                    <div class="theme-selector-wrapper"></div>
                 </footer>
-            </section>
-        </main>
-    </div>
-
-    <div class="overlay-wrapper hidden"></div>
-
-    <div class="notifications-wrapper"></div>
-
-    <script type="module" src="js/script.js"></script>
-</body>
+            </div>
+            
+            <div class="wrapper__overlay">
+                <div class="notifications-wrapper"></div>
+            </div>
+        </div>
+        
+        <script type="module" src="src/main.js"></script>
+    </body>
 </html>

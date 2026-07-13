@@ -1,0 +1,35 @@
+.wrapper__background {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-background);
+  z-index: var(--z-background-wrapper);
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  animation: fadeIn var(--transition-after-load);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.background__canvas,
+.background__image,
+.background__video {
+  position: absolute;
+  inset: 0;
+}
+
+.background__image,
+.background__video {
+  object-fit: cover;
+}

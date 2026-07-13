@@ -1,0 +1,29 @@
+[data-theme="Default"] {
+  --backdrop-blur-container: blur(8px);
+  --border-container: 2px solid var(--color-border);
+  --border-radius-container: 8px;
+
+  --color-text: #e3e3e3;
+  --color-surface: rgba(30, 30, 30, 0.6);
+  --color-primary: #e3e3e3; /* default */
+  --color-secondary: #e3e3e3; /* default */
+  --color-background: #121212;
+  --color-border: #2d2d2d;
+  
+  --color-typewriter: var(--color-text);
+}
+
+[data-theme="Goida"] {
+  --backdrop-blur-container: blur(8px);
+  --border-container: 2px solid var(--color-border);
+  --border-radius-container: 0;
+
+  --color-text: #e3e3e3;
+  --color-surface: rgba(0, 23, 128, 0.6);
+  --color-primary: #3a75ff;
+  --color-secondary: #89a5ff;
+  --color-background: #1e3e8a;
+  --color-border: #5978ff;
+  
+  --color-typewriter: var(--color-primary);
+}

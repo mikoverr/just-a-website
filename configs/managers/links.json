@@ -1,0 +1,47 @@
+{
+  "links": [
+    {
+      "key": "github",
+      "label": "ME ON GITHUB",
+      "url": "https://github.com/mikoverr",
+      "icon": "fa-brands fa-github",
+      "ariaLabel": "Visit my GitHub profile",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "key": "twitch",
+      "label": "TWITCH CHANNEL",
+      "url": "https://twitch.tv/mikoverr",
+      "icon": "fa-brands fa-twitch",
+      "ariaLabel": "Visit my Twitch channel",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "key": "discord",
+      "label": "DISCORD DM",
+      "url": "https://discord.ru/",
+      "icon": "fa-brands fa-discord",
+      "ariaLabel": "I am on Discord",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "key": "steam",
+      "label": "YEAH, STEAM",
+      "url": "https://steamcommunity.com/id/mikoverr",
+      "icon": "fa-brands fa-steam",
+      "ariaLabel": "Visit my Steam profile",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    }
+  ],
+  "config": {
+    "wrapperClassName": "links-wrapper",
+    "listClassName": "links",
+    "itemClassName": "links__item surface",
+    "iconClassName": "links__item-icon",
+    "labelClassName": "links__item-label"
+  }
+}

@@ -1,0 +1,11 @@
+.typewriter {
+  font-family: var(--font-family-typewriter);
+  font-weight: 400;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+  font-size: var(--font-size-xl);
+  color: var(--color-typewriter);
+}

@@ -1,9 +1,0 @@
-.overlay-wrapper {
-  position: fixed;
-  inset: 0;
-  z-index: var(--z-overlay-wrapper);
-}
-
-.overlay-wrapper.hidden {
-  display: none;
-}

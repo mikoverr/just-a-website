@@ -1,0 +1,15 @@
+{
+  "phraseList": [
+    "Hello",
+    "I`m mikoverr",
+    "A web developer",
+    "This is my personal space",
+    "This is just a website"
+  ],
+  "anotherPhrase": "Welcome back!",
+  "letterTypingDelay": 200,
+  "phraseTypingDelay": 2000,
+  "letterDeletingDelay": 100,
+  "parentElemClassName": "typewriter-wrapper",
+  "elemClassName": "typewriter"
+}

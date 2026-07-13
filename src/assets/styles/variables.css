@@ -1,0 +1,48 @@
+:root {
+  --content-max-width: 1200px;
+  --links-wrapper-max-width: 480px;
+  --notification-min-width: 240px;
+
+  --gap-xs: 0.25rem;
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 1.5rem;
+  --gap-xl: 2rem;
+
+  --font-family-base: "Lato", system-ui, sans-serif;
+  --font-family-typewriter: "Bitcount Grid Double", system-ui;
+  --font-family-links: "VT323", monospace;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --font-size-base: 1rem;
+  --font-scale-ratio: 1.25;
+  --font-size-sm: calc(var(--font-size-base) / var(--font-scale-ratio));
+  --font-size-lg: calc(var(--font-size-base) * var(--font-scale-ratio));
+  --font-size-xl: calc(var(--font-size-lg) * var(--font-scale-ratio));
+  --font-size-2xl: calc(var(--font-size-xl) * var(--font-scale-ratio));
+
+  --transition-duration: 0.2s;
+  --transition-duration-after-load: 0.3s;
+  --transition: var(--transition-duration) ease;
+  --transition-after-load: var(--transition-duration-after-load) ease-in-out;
+
+  --z-background: -1;
+  --z-overlay: 99;
+
+  /* Empty theme */
+  --backdrop-blur-container: none;
+  --border-container: none;
+  --border-radius-container: 0;
+
+  --color-text: #e3e3e3;
+  --color-surface: #202020;
+  --color-primary: #e3e3e3;
+  --color-secondary: #e3e3e3;
+  --color-background: #202020;
+  --color-border: #e3e3e3;
+
+  --color-typewriter: var(--color-text);
+  /*  */
+}

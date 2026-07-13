@@ -1,0 +1,14 @@
+{
+  "snakeCount": 10,
+  "fps": 12,
+  "grid": {
+    "size": 8,
+    "gap": 4
+  },
+  "isPageHidden": false,
+  "isDebugMode": false,
+  "marginTop": 20,
+  "marginRight": 20,
+  "marginBottom": 20,
+  "marginLeft": 20
+}

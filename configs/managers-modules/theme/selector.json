@@ -1,0 +1,14 @@
+{
+  "parentElemClassName": "theme-selector-wrapper",
+  "wrapperClassName": "theme-selector",
+  "toggleClassName": "theme-selector__theme-toggle",
+  "toggleLabelClassName": "theme-toggle__label",
+  "toggleIconClassName": "theme-toggle__icon",
+  "listClassName": "theme-selector__themes-list",
+  "itemClassName": "themes-list__item",
+  "itemLabelClassName": "themes-list__item-label",
+  "itemIconClassName": "themes-list__item-icon",
+  "activeClassName": "active",
+  "hiddenClassName": "hidden",
+  "animationDuration": 200
+}

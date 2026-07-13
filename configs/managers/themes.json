@@ -1,0 +1,24 @@
+{
+  "default": {
+    "name": "Default",
+    "background": {
+      "type": "canvas",
+      "src": {
+        "scene": "../managers-modules/theme/sub-modules/canvas-scenes/snakes-scene/snakes-scene.js",
+        "sceneConfig": "../configs/canvas/scenes/snakes.json",
+        "sceneName": "Scene"
+      }
+    },
+    "additionalScripts": [
+      "../utils/random-default-theme-accent.js"
+    ]
+  },
+  "goida": {
+    "name": "Goida",
+    "background": {
+      "type": "video",
+      "src": "src/assets/videos/goida-background.mp4"
+    },
+    "additionalScripts": []
+  }
+}

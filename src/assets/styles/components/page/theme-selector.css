@@ -1,0 +1,114 @@
+.theme-selector {
+  position: relative;
+  user-select: none;
+}
+
+/* Toggle */
+.theme-selector__theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  
+  margin: 0;
+  padding: var(--gap-xs) var(--gap-sm);
+  cursor: pointer;
+  
+  color: var(--color-secondary);
+  transition: all var(--transition);
+}
+
+.theme-selector__theme-toggle:hover,
+.theme-selector__theme-toggle:focus-visible {
+  color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.theme-toggle__icon {
+  flex-shrink: 0;
+  font-size: var(--font-size-sm);
+  color: inherit;
+  
+  transition: transform var(--transition);
+}
+
+.theme-selector__theme-toggle.active .theme-toggle__icon {
+  transform: rotateX(0.5turn);
+}
+
+.theme-toggle__label {
+  font-size: var(--font-size-sm);
+  color: inherit;
+  transition: opacity var(--transition);
+}
+
+/* List */
+.theme-selector__themes-list {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-xs);
+  
+  padding: var(--gap-sm);
+  margin-bottom: calc(var(--gap-sm) * 2);
+  
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition:
+    bottom var(--transition),
+    opacity var(--transition),
+    transform var(--transition);
+}
+
+.theme-selector__themes-list.active {
+  bottom: 100%;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.themes-list__item {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xs);
+  
+  margin: 0;
+  padding: var(--gap-xs) var(--gap-sm);
+  cursor: pointer;
+  border-radius: var(--border-radius-container);
+  
+  color: var(--color-secondary);
+  transition: all var(--transition);
+}
+
+.themes-list__item:hover {
+  color: var(--color-primary);
+  background-color: var(--color-border);
+}
+
+.themes-list__item.active {
+  cursor: default;
+  color: var(--color-primary);
+  background-color: var(--color-border);
+}
+
+.themes-list__item-label {
+  font-size: var(--font-size-sm);
+  color: inherit;
+}
+
+.themes-list__item-icon {
+  font-size: var(--font-size-sm);
+  color: inherit;
+  
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.themes-list__item.active .themes-list__item-icon {
+  opacity: 1;
+}

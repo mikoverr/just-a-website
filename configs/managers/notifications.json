@@ -1,0 +1,10 @@
+{
+  "notificationTypes": ["info", "warning", "error"],
+  "parentElemClassName": "notifications-wrapper",
+  "elemClassName": "notifications",
+  "surfaceClassName": "surface",
+  "notificationClassName": "notifications__notification",
+  "notificationTypePrefix": "notification--",
+  "hiddenOnLeftClassName": "hidden-on-left",
+  "hiddenHeightClassName": "hidden-height"
+}
